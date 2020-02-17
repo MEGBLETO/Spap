@@ -1,0 +1,187 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  background-color: beige;
+}
+
+
+header{
+  height: 10vh;
+  background-color: #333;
+  display: flex;
+  text-align: center;
+}
+
+header nav{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+
+nav h1,ul{
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+nav h1,input{
+   height: 2rem;
+   width: 600px;
+   border-radius:.5rem;
+   perspective: 1000px;
+
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+}
+
+nav ul:first-child{
+  padding-left: 2rem;
+}
+nav h1{
+  color: #fff;
+  margin: 0 1rem;
+}
+
+
+nav ul li{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  justify-content: space-between;
+
+}
+
+nav ul li a {
+text-decoration: none;
+justify-content: space-between;
+color: #fff;
+}
+
+nav ul li  {
+
+
+}
+
+/*showcase*/
+
+.showcase{
+  display: flex;
+  height: 240vh;
+  background-color: burlywood;
+  width: 100%;
+
+}
+
+
+.showcase .trending{
+  margin: 2rem 2rem;
+  height: 90%;
+  background-color: rgb(179, 166, 166);
+  width: 400px;
+}
+
+.showcase .trending h1{
+  background-color: #fff;
+}
+
+.showcase .movies{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin:2rem .5rem;
+  height: 90%;
+  background-color: #333;
+  width: 99%;
+ 
+}
+
+.showcase .movies .movies-head{
+  grid-column: 1/4;
+}
+
+
+.showcase .movies .item{
+  position: relative;
+  margin: 1rem 1rem;
+  width: 300px;
+  height: 400px;
+  background-color: rgb(59, 56, 56);
+}
+
+ .movies .item img{
+  position: absolute;
+  width: 100%;
+}
+
+.movies .movies-head{
+  display: flex;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  height: 10vh;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.movies .movies-head h1{
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+.showcase .movies .btn{
+  text-decoration: none;
+  color:#fff;
+  position: absolute;
+  margin: 14rem 6rem;
+  opacity: -1;
+}
+
+.showcase .movies .item:hover .btn{
+  opacity: 1;
+  padding: 1rem 1rem;
+  background-color: red;
+  transition: all .2s ease-in;
+}
+
+.showcase .movies .item:hover img{
+  opacity: 0.3;
+  transition: all .1s ease-in;
+}
+
+.showcase .trend-item{
+text-align: center;
+align-items: center;
+background-color: #fff;
+margin: .4rem;
+height: 2rem;
+border-radius: 5px;
+}
+
+.showcase .trending h1{
+  text-align: center;
+  padding: 1rem;
+}
+
+.showcase .trend-item a{
+  text-decoration: none;
+  color: black;
+}
+.showcase .trend-item p{
+  padding-top: .5em;
+}
+
+.showcase .trend-item a:hover{
+  color: red;
+}
